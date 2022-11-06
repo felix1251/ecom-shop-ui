@@ -1,5 +1,11 @@
 # store-frontend
 
+Open for contributors
+
+CONTACT ME
+
+email: domhack123@gmail.com
+
 ## Project setup
 ```
 npm install
