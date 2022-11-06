@@ -6,12 +6,13 @@
         v-model:selectedKeys="selectedKeys"
         mode="horizontal"
       >
-        <a-menu-item key="1">Products</a-menu-item>
-        <a-menu-item key="2">Stores</a-menu-item>
-        <a-menu-item key="3">Register</a-menu-item>
+        <a-menu-item key="1">Home</a-menu-item>
+        <a-menu-item key="2">Products</a-menu-item>
+        <a-menu-item key="3">Stores</a-menu-item>
+        <a-menu-item key="4">Register</a-menu-item>
       </a-menu>
     </a-layout-header>
-    <a-layout-content :style="{ marginTop: '64px', padding: '0px 20px'}">
+    <a-layout-content :style="{ marginTop: '64px', padding: '0px 20px', width: '100%'}">
       <router-view/>
     </a-layout-content>
     <a-layout-footer :style="{ textAlign: 'center' }">
