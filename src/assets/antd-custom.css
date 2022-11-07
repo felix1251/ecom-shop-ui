@@ -2,3 +2,7 @@
       padding: 0px 15px 0px 30px;
       background-color: white;
 }
+
+.menu-item{
+      text-decoration: none;
+}
