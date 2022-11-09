@@ -8,10 +8,6 @@
       </div>
     </a-layout-header>
     <a-layout-content class="content">
-      <a-breadcrumb v-if="this.$route.meta.layout" class="py-2 px-3 d-block d-sm-none">
-        <a-breadcrumb-item>page</a-breadcrumb-item>
-        <a-breadcrumb-item>{{this.$route.name}}</a-breadcrumb-item>
-      </a-breadcrumb>
       <router-view/>
     </a-layout-content>
     <a-layout-footer class="footer">
@@ -46,9 +42,17 @@ export default {
   .content{
     width: 100%;
     background: white;
+    overflow: auto;
   }
   .footer{
     text-align: center;
     background: white;
+    padding: 18px;
+  }
+
+  @media (max-width: 700px){
+    .footer{
+      padding: 15px;
+    }
   }
 </style>

@@ -10,9 +10,6 @@
       <a-card-grid class="card-item">Content</a-card-grid>
       <a-card-grid class="card-item">Content</a-card-grid>
       <a-card-grid class="card-item">Content</a-card-grid>
-      <a-card-grid class="card-item">Content</a-card-grid>
-      <a-card-grid class="card-item">Content</a-card-grid>
-      <a-card-grid class="card-item">Content</a-card-grid>
     </a-card>
 </template>
 <script>
@@ -38,18 +35,30 @@ export default {
     
   }
   .card-item{
-    height: 150px;
+    height: 260px;
     width: 25%;
     text-align: center;
   }
-  
+
+  @media (max-width: 1000px) {
+    .card-item{
+      height: 200px;
+    }
+  }
+
+    @media (max-width: 750px) {
+    .card-item{
+      height: 150px;
+    }
+  }
+
   @media (max-width: 575.98px) {
     .ant-carousel :deep(.slick-slide){
       line-height: 110px;
       height: 200px;
     }
     .card-item{
-      height: 110px;
+      height: 130px;
       width: 50%;
     }
   }

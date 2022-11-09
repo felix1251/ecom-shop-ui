@@ -1,5 +1,5 @@
 <template>
-  <div class="card-main d-flex h-100">
+  <div class="card-main d-flex h-100" ref="containerRef">
     <a-card class="card-left">
       <div class="d-none d-sm-block">
         <filters/>
@@ -9,7 +9,22 @@
       </div>
     </a-card>
     <a-card class="card-right">
-      <span>List</span>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item">Content</a-card-grid>
     </a-card>
   </div>
     <a-drawer
@@ -42,21 +57,55 @@ export default {
 <style scoped>
   .card-left {
     min-width: 260px;
-    height: 100%;
   }
   .card-right{
     height: 100%;
     width: 100%;
+    overflow: auto;
   }
   .icon{
     font-size: 22px
   }
-  @media (max-width: 576px){
-      .card-main{
-        flex-direction: column;
-      }
-      .card-left{
-        height: 80px;
-      }
+  .card-item{
+    height: 250px;
+    width: 20%;
+    text-align: center;
+    overflow: auto;
+  }
+
+  @media (max-width: 1400px){
+    .card-item{
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 1200px){
+    .card-item{
+      height: 150px;
+      width: 25%;
+    }
+  }
+
+  @media (max-width: 900px){
+    .card-item{
+      height: 140px;
+      width: 33.3%;
+    }
+  }
+
+  @media (max-width: 700px){
+    .card-item{
+      height: 130px;
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 575.98px){
+    .card-main{
+      flex-direction: column;
+    }
+    .card-item{
+      height: 150px;
+    }
   }
 </style>
