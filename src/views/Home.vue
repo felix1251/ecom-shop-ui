@@ -6,13 +6,13 @@
       <div><h3>image 4</h3></div>
     </a-carousel>
     <a-card title="Trending Products">
-      <a-card-grid class="card-item w-25 text-center">Content</a-card-grid>
-      <a-card-grid class="card-item w-25 text-center">Content</a-card-grid>
-      <a-card-grid class="card-item w-25 text-center">Content</a-card-grid>
-      <a-card-grid class="card-item w-25 text-center">Content</a-card-grid>
-      <a-card-grid class="card-item w-25 text-center">Content</a-card-grid>
-      <a-card-grid class="card-item w-25 text-center">Content</a-card-grid>
-      <a-card-grid class="card-item w-25 text-center">Content</a-card-grid>
+      <a-card-grid class="card-item">Content</a-card-grid>
+      <a-card-grid class="card-item">Content</a-card-grid>
+      <a-card-grid class="card-item">Content</a-card-grid>
+      <a-card-grid class="card-item">Content</a-card-grid>
+      <a-card-grid class="card-item">Content</a-card-grid>
+      <a-card-grid class="card-item">Content</a-card-grid>
+      <a-card-grid class="card-item">Content</a-card-grid>
     </a-card>
 </template>
 <script>
@@ -38,7 +38,9 @@ export default {
     
   }
   .card-item{
-    height: 120px;
+    height: 150px;
+    width: 25%;
+    text-align: center;
   }
   
   @media (max-width: 575.98px) {
@@ -47,7 +49,8 @@ export default {
       height: 200px;
     }
     .card-item{
-      height: 100px;
+      height: 110px;
+      width: 50%;
     }
   }
 </style>

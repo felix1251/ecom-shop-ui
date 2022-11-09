@@ -8,7 +8,7 @@
       </div>
     </a-layout-header>
     <a-layout-content class="content">
-      <a-breadcrumb v-if="this.$route.meta.layout" class="p-2 d-block d-sm-none">
+      <a-breadcrumb v-if="this.$route.meta.layout" class="py-2 px-3 d-block d-sm-none">
         <a-breadcrumb-item>page</a-breadcrumb-item>
         <a-breadcrumb-item>{{this.$route.name}}</a-breadcrumb-item>
       </a-breadcrumb>
@@ -27,8 +27,6 @@ export default {
   name: "App",
   data(){
     return {
-      navWidth: 0,
-      mobileNavWidth: 0,
     }
   },
   methods: {
