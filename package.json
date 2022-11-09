@@ -10,11 +10,17 @@
     "@ant-design/icons-vue": "^6.1.0",
     "@popperjs/core": "^2.11.6",
     "ant-design-vue": "^3.2.13",
+    "axios": "^0.21.1",
     "bootstrap": "^5.2.2",
     "bootstrap-vue-3": "^0.4.6",
+    "chart.js": "^3.9.1",
+    "crypto-js": "^4.1.1",
+    "secure-web-storage": "^1.0.2",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
-    "vuex": "^4.0.0"
+    "vue3-google-login": "^2.0.12",
+    "vuex": "^4.0.0",
+    "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-router": "~5.0.0",

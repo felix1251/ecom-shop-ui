@@ -16,7 +16,10 @@
         <router-link class="menu-item" to="/products">Products</router-link>
       </a-menu-item>
       <a-menu-item key="3">Stores</a-menu-item>
-      <a-menu-item key="4">Sign In</a-menu-item>
+      <a-menu-item key="4">Cart</a-menu-item>
+      <a-menu-item key="5">
+        <router-link class="menu-item" to="/signin">Sign In</router-link>
+      </a-menu-item>
     </a-sub-menu>
   </a-menu>
 </template>

@@ -16,6 +16,14 @@ const routes = [
     component: function () {
       return import('../views/Products.vue')
     }
+  },
+  {
+    path: '/signin',
+    name: 'signin',
+    meta: {layout: false},
+    component: function () {
+      return import('../views/SignIn.vue')
+    }
   }
 ]
 

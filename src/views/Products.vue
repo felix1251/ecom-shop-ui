@@ -9,7 +9,7 @@
       </div>
     </a-card>
     <a-card class="card-right">
-        <a-card-grid class="card-item">Content</a-card-grid>
+        <a-card-grid class="card-item" :hoverable="false">Content</a-card-grid>
         <a-card-grid class="card-item">Content</a-card-grid>
         <a-card-grid class="card-item">Content</a-card-grid>
         <a-card-grid class="card-item">Content</a-card-grid>
@@ -36,7 +36,6 @@
       <filters/>
     </a-drawer>
 </template>
-
 <script>
 import Filters from '@/components/Products/Filters.vue'
 import { FilterOutlined } from '@ant-design/icons-vue';
